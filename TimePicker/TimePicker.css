@@ -1,0 +1,112 @@
+.time-picker {
+  position: relative;
+}
+
+.time-picker .time-picker-input {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time-picker .time-picker-icon {
+  margin-right: 8px;
+  color: #64748b;
+}
+
+.time-picker .time-picker-popover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 0.1);
+  padding: 16px;
+  min-width: 380px;
+  z-index: 10;
+}
+
+.time-picker .time-input-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.time-picker .time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-picker .time-input input {
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.time-picker .time-colon {
+  font-size: 56px;
+  line-height: 80px;
+  height: 104px;
+  color: #1a1a1a;
+}
+
+.time-picker .time-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.time-picker .button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.time-picker .button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.time-picker .button:hover {
+  background: #1d4ed8;
+}
+
+.periods-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.periods-picker .period-button {
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.periods-picker .period-button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.periods-picker .period-button:hover:not(.active) {
+  background: #f8fafc;
+}
